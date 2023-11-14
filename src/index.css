@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(117, 211, 211, 0.539);
+  border-radius: 8px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+main {
+  height: 100%;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+a {
+  color: #000000;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 80px auto;
+  min-height: 70vh;
+}
+
+.second--title,
+.main--title{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 35px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  letter-spacing: .5px;
+
+  color: rgb(20 76 92);
+}
+
+@media(max-width: 600px) {
+  .main--title{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
+
+.second--title{
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.main--text{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.title{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.title span{
+  color: rgb(20 76 92);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
