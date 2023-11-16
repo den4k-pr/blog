@@ -28,13 +28,13 @@ export const Header = () => {
                 </button>}
                 <ul style={{transform: !burger ? "translateY(-100%)" : "translateY(0%)"}} className={`header__wrapper-list`}>
                     <li onClick={HendleClothe} className="header__wrapper-list-link">
-                        <Link to="/">Домой</Link>
+                        <Link to="/">Strona główna</Link>
                     </li>
                     <li onClick={HendleClothe} className="header__wrapper-list-link">
-                        <Link to="/about">O нас</Link>
+                        <Link to="/about">O nas</Link>
                     </li>
                     <li onClick={HendleClothe} className="header__wrapper-list-link">
-                        <Link to="/privacy">Политика</Link>
+                        <Link to="/privacy">Polityka prywatności</Link>
                     </li>
                 </ul>
                 <ul className="header__wrapper-listMedia">
