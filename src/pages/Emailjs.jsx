@@ -7,32 +7,32 @@ export const EmailJS = () => {
         Prism.highlightAll();
     }, []);
 
-    return(
+    return (
         <section className="projectContent">
-            <span className="projectContent-data">Опубликовано: 10 ноября</span>
-            <h2 className="projectContent-title">React.JS, Email.JS отправка формы на почту</h2>
-            <p className='projectContent-text'>В наше время веб-разработки важно обеспечивать ваши веб-приложения функциональностью отправки форм, чтобы взаимодействовать с пользователями. В этой статье мы рассмотрим, как создать форму на ReactJS и использовать EmailJS для отправки данных на электронную почту. Дополнительно, мы рассмотрим сохранение отправленных данных в "Бочке" (Airtable) для удобного хранения и управления информацией.</p>
-            <h3 className='main--title'>Шаг 1: Настройка ReactJS проекта</h3>
-            <p className='projectContent-text'>Если у вас уже есть проект на ReactJS, переходите ко второму шагу. Если нет, создайте новый проект:</p>
+            <span className="projectContent-data">Opublikowano: 10 listopada</span>
+            <h2 className="projectContent-title">React.JS, Email.JS - wysyłanie formularza pocztowego</h2>
+            <p className='projectContent-text'>W dzisiejszych czasach w rozwoju aplikacji internetowych ważne jest, aby zapewnić funkcjonalność wysyłania formularzy, aby móc wchodzić w interakcję z użytkownikami. W tym artykule omówimy, jak stworzyć formularz w ReactJS i użyć EmailJS do wysyłania danych na adres e-mail. Dodatkowo, rozważymy zapisywanie wysłanych danych w "Bocie" (Airtable) dla wygodnego przechowywania i zarządzania informacjami.</p>
+            <h3 className='main--title'>Krok 1: Konfiguracja projektu ReactJS</h3>
+            <p className='projectContent-text'>Jeśli już masz projekt w ReactJS, przejdź do drugiego kroku. Jeśli nie, utwórz nowy projekt:</p>
             <pre>
                 <code className="language-javascript">
-{`npx create-react-app my-email-form
+                    {`npx create-react-app my-email-form
 cd my-email-form
 `}
                 </code>
             </pre>
-            <h3 className='main--title'>Шаг 2: Установка EmailJS</h3>
-            <p className='projectContent-text'>Установите пакет EmailJS:</p>
+            <h3 className='main--title'>Krok 2: Instalacja EmailJS</h3>
+            <p className='projectContent-text'>Zainstaluj pakiet EmailJS:</p>
             <pre>
                 <code className="language-javascript">
-{`npm install emailjs-com`}
+                    {`npm install emailjs-com`}
                 </code>
             </pre>
-            <h3 className='main--title'>Шаг 3: Создание формы</h3>
-            <p className='projectContent-text'>Создайте компонент формы ContactForm.js:</p>
+            <h3 className='main--title'>Krok 3: Tworzenie formularza</h3>
+            <p className='projectContent-text'>Stwórz komponent formularza ContactForm.js:</p>
             <pre>
                 <code className="language-javascript">
-{`import React, { useState } from 'react';
+                    {`import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
@@ -56,7 +56,7 @@ const ContactForm = () => {
         console.log(error.text);
       });
 
-    // Дополнительно: Сохранение данных в "Бочке" (Airtable)
+    // Dodatkowo: Zapisywanie danych w "Bocie" (Airtable)
     fetch('https://api.airtable.com/v0/YOUR_BASE_ID/YOUR_TABLE_NAME', {
       method: 'POST',
       headers: {
@@ -66,14 +66,14 @@ const ContactForm = () => {
       body: JSON.stringify({ fields: formData }),
     });
 
-    // Очистка формы после отправки
+    // Wyczyszczenie formularza po wysłaniu
     setFormData({ name: '', email: '', message: '' });
   };
 
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Имя:
+        Imię:
         <input type="text" name="name" value={formData.name} onChange={handleChange} />
       </label>
       <label>
@@ -81,10 +81,10 @@ const ContactForm = () => {
         <input type="email" name="email" value={formData.email} onChange={handleChange} />
       </label>
       <label>
-        Сообщение:
+        Wiadomość:
         <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
       </label>
-      <button type="submit">Отправить</button>
+      <button type="submit">Wyślij</button>
     </form>
   );
 };
@@ -93,17 +93,17 @@ export default ContactForm;
 `}
                 </code>
             </pre>
-            <h3 className='main--title'>Шаг 4: Использование формы</h3>
-            <p className='projectContent-text'>Используйте созданный компонент формы в своем приложении:</p>
+            <h3 className='main--title'>Krok 4: Użycie formularza</h3>
+            <p className='projectContent-text'>Użyj stworzonego komponentu formularza w swojej aplikacji:</p>
             <pre>
                 <code className="language-javascript">
-{`import React from 'react';
+                    {`import React from 'react';
 import ContactForm from './ContactForm';
 
 const App = () => {
   return (
     <div>
-      <h1>Моя форма для связи</h1>
+      <h1>Mój formularz kontaktowy</h1>
       <ContactForm />
     </div>
   );
@@ -113,8 +113,8 @@ export default App;
 `}
                 </code>
             </pre>
-            <h3 className='main--title'>Заключение</h3>
-            <p className='projectContent-text'> className='projectContent-text'Теперь у вас есть работающая форма на ReactJS, использующая EmailJS для отправки данных на почту и сохраняющая информацию в "Бочке" (Airtable). Этот подход обеспечивает не только удобный способ общения с вашими пользователями, но и сохранение данных для последующего анализа.</p>
+            <h3 className='main--title'>Podsumowanie</h3>
+            <p className='projectContent-text'>Teraz masz działający formularz w ReactJS, korzystający z EmailJS do wysyłania danych na adres e-mail i zapisujący informacje w "Bocie" (Airtable). Ten podejście zapewnia nie tylko wygodny sposób komunikacji z użytkownikami, ale także zapisywanie danych do późniejszej analizy.</p>
         </section>
-    )
-}
+    );
+};
