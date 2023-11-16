@@ -58,21 +58,22 @@ export const AboutContact = () => {
 
     return(
         <section className="about--contact">
-            <h2 className="main--title">Напишите нам</h2>
-            <p className="main--text">Нужна помощь в разработке? Напишите, чтобы быстро найти помощь от опытных разработчиков.</p>
+            <h2 className="main--title">Napisz do nas</h2>
+            <p className="main--text">Potrzebujesz pomocy w programowaniu? Napisz, aby szybko uzyskać wsparcie od doświadczonych programistów.</p>
             <form onSubmit={handleSubmit} className="about--contact-form">
-                <label>Имя</label>
+                <label>Imię</label>
                 <input type="text" name="name" required/>
-                <label>Електронная пошта</label>
+                <label>Adres e-mail</label>
                 <input type="email" name="email" required/>
-                <label>Тема</label>
+                <label>Temat</label>
                 <input type="text" name="title" required/>
-                <label>Сообщение</label>
+                <label>Wiadomość</label>
                 <textarea name="message" required></textarea>
-                <button>{isSubmitting ? "Loading..." : "Отправить"}</button>
+                <button>{isSubmitting ? "Ładowanie..." : "Wyślij"}</button>
             </form>
-            <p className="main--text" style={{color: "green", paddingTop: "15px"}}>{isSaccess && "Сообщение успешно отправлено"}</p>
-            <p className="main--text" style={{color: "red", paddingTop: "15px"}}>{isError && "Произошла ошибка, попробуйте позже"}</p>
+            <p className="main--text" style={{color: "green", paddingTop: "15px"}}>{isSaccess && "Wiadomość została pomyślnie wysłana"}</p>
+            <p className="main--text" style={{color: "red", paddingTop: "15px"}}>{isError && "Wystąpił błąd, spróbuj ponownie później"}</p>
         </section>
+
     )
 }
