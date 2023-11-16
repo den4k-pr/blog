@@ -1,18 +1,16 @@
-
-
 export const Privacy = () => {
-    return(
+    return (
         <section>
-            <h2 className="main--title">Политика конфиденциальности</h2>
-            <p className="main--text">Благодарим за посещение [Название сайта] ("Мы", "Сайт"). Наша политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу личную информацию при использовании нашего сайта.</p>
-            <h3 className="second--title">Сбор и использование информации</h3>
-            <p className="main--text">Мы можем автоматически собирать ограниченную информацию о вашем визите на сайт, такую как IP-адрес, тип браузера, время посещения и страницы, которые вы просматриваете. Эта информация используется для анализа тенденций и улучшения работы сайта, но она остается анонимной и не связана с конкретными лицами.</p>
-            <h3 className="second--title">Реклама Google AdSense</h3>
-            <p className="main--text">Наш сайт может использовать рекламу Google AdSense для отображения рекламных материалов. Google AdSense использует файлы cookie для вывода рекламы, соответствующей вашим интересам. Файлы cookie - это небольшие текстовые файлы, которые хранятся на вашем устройстве и позволяют нам улучшить ваш опыт пользователя.</p>
-            <h3 className="second--title">Отсутствие системы регистрации и авторизации</h3>
-            <p className="main--text">Мы не собираем личную информацию от вас через систему регистрации или авторизации. Вы можете просматривать наш сайт анонимно, не предоставляя какой-либо личной информации.</p>
-            <h3 className="second--title">Изменения в политике конфиденциальности</h3>
-            <p className="main--text">Мы можем время от времени обновлять эту политику конфиденциальности. Пожалуйста, периодически просматривайте эту страницу, чтобы получать последнюю информацию о наших практиках сбора и использования информации. Если у вас есть вопросы или замечания относительно нашей политики конфиденциальности, пожалуйста, свяжитесь с нами, используя контактную информацию, предоставленную на странице "Свяжитесь с нами". Благодарим за преданность и доверие!</p>
+            <h2 className="main--title">Polityka prywatności</h2>
+            <p className="main--text">Dziękujemy za odwiedzenie [Nazwa strony] ("My", "Strona"). Nasza polityka prywatności wyjaśnia, jak zbieramy, używamy i chronimy Twoje dane osobowe podczas korzystania z naszej strony.</p>
+            <h3 className="second--title">Zbieranie i używanie informacji</h3>
+            <p className="main--text">Automatycznie możemy zbierać ograniczone informacje o Twojej wizycie na stronie, takie jak adres IP, rodzaj przeglądarki, czas wizyty i strony, które przeglądasz. Te informacje są wykorzystywane do analizy trendów i poprawy działania strony, ale pozostają anonimowe i nie są powiązane z konkretnymi osobami.</p>
+            <h3 className="second--title">Reklama Google AdSense</h3>
+            <p className="main--text">Nasza strona może korzystać z reklam Google AdSense do wyświetlania materiałów reklamowych. Google AdSense używa plików cookie do dostarczania reklam odpowiadających Twoim zainteresowaniom. Pliki cookie to małe pliki tekstowe przechowywane na Twoim urządzeniu, które pozwalają nam poprawić Twoje doświadczenia użytkownika.</p>
+            <h3 className="second--title">Brak systemu rejestracji i logowania</h3>
+            <p className="main--text">Nie zbieramy od Ciebie danych osobowych za pośrednictwem systemu rejestracji ani logowania. Możesz przeglądać naszą stronę anonimowo, nie udostępniając żadnych osobistych informacji.</p>
+            <h3 className="second--title">Zmiany w polityce prywatności</h3>
+            <p className="main--text">Możemy od czasu do czasu aktualizować tę politykę prywatności. Prosimy regularnie sprawdzać tę stronę, aby uzyskać najnowsze informacje na temat naszych praktyk zbierania i używania danych. Jeśli masz pytania lub uwagi dotyczące naszej polityki prywatności, skontaktuj się z nami, korzystając z informacji kontaktowych dostępnych na stronie "Skontaktuj się z nami". Dziękujemy za lojalność i zaufanie!</p>
         </section>
-    )
-}
+    );
+};
